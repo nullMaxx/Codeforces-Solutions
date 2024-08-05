@@ -7,4 +7,4 @@ This repo contains my solutions of Codeforces problems.
 <div align="center">
   
 ## Index 
-#### Sorted by Problem ID 
+#### Sorted by Accept Time 
