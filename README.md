@@ -1,7 +1,7 @@
 # Codeforces Solutions
 
-This repository contains my solutions of Codeforces problems. They are in C++ language.  
+This repo contains my solutions of Codeforces problems.  
 
-#### If this repository helped you out, please consider giving it a :star:
+#### If this repo helped you out, please consider giving it a :star:
 
 <div align="center">
