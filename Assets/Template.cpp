@@ -1,3 +1,38 @@
+/*
+████████████████████████████████████████████████████████████████████
+████████████████████████████████    ████████████████████████████████
+██████████████████████████████        ██████████████████████████████
+██████      ██████████████████        ██████████████████      ██████
+██████          ██████████████        ██████████████          ██████
+██████      ██    ████████████        ████████████    ██      ██████
+██████      ████    ██████████        ██████████    ████      ██████
+██████      ████      ██████████    ██████████      ████      ██████
+██████      ████      ██████████    ██████████    ██████      ██████
+██████      ██████    ██████████    ██████████    ██████      ██████
+██████      ██████    ████████        ████████    ██████      ██████
+██████      ██████      ██████        ██████      ██████      ██████
+██████      ████        ████            ████        ████      ██████
+██████            ██████████    ████    ██████████            ██████
+██████      ██      ██████    ████████    ██████      ██      ██████
+██████      ██████            ████████            ██████      ██████
+██████                    ██            ██                    ██████
+██████████████████████      ████    ████      ██████████████████████
+████████████████████████      ██    ██      ████████████████████████
+██████████████████████████                ██████████████████████████
+██████████████████████████████        ██████████████████████████████
+████████████████████████████████████████████████████████████████████
+*/
+/*
+
+powered by ANDRIY POPYK
+
+*/
+
+//#pragma GCC optimize("O3")
+//#pragma GCC target("avx,avx2,fma")
+//#pragma GCC optimization ("unroll-loops")
+//#pragma GCC target("avx,avx2,sse,sse2,sse3,sse4,popcnt")
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -17,12 +52,21 @@ using vll = vector<ll>;
 #define ull unsigned long long
 #define all(x) begin(x),end(x)
 #define pb push_back
-mt19937 mrand(random_device{}());
-int rnd(int x) { return mrand() % x;} /// random numbers
+#define elif else if
+#define time_init auto start = std::chrono::high_resolution_clock::now()
+#define time_report                                       \
+    auto end = std::chrono::high_resolution_clock::now(); \
+    std::cout << std::chrono::duration_cast<std::chrono::milliseconds>(end - start).count() << " ms" << endl
+#define sum(x) (accumulate(all(x), 0LL))
+#define product(x) (accumulate(all(x), 1LL, multiplies<int>()))
+#define lcm(a, b) ((a) / __gcd(a, b) * (b))
 
-const ll mod = 1e9+7; /// module
-const ll inf = 1e9 + 5; /// big const for int
-const ll INF = 1e18 + 5; /// big const for long long
+mt19937 mrand(random_device{}());
+int rnd(int x) { return mrand() % x;}
+
+const ll mod = 1e9+7;
+const ll inf = 1e9 + 5;
+const ll INF = 1e18 + 5;
 
 template<typename T1, typename T2> // cin >> pair<T1, T2>
 istream& operator>>(istream &istream, pair<T1, T2> &p) { return (istream >> p.first >> p.second); }
@@ -34,14 +78,14 @@ template<typename T> // cout << vector<T>
 ostream& operator<<(ostream &ostream, const vector<T> &c) { for (auto &it : c) cout << it << " "; return ostream; }
 ll powmod(ll a,ll b) {ll res=1;a%=mod; assert(b>=0); for(;b;b>>=1){if(b&1)res=res*a%mod;a=a*a%mod;}return res;}
 
-void solve() /// solving func
+void solve()
 {
     
 }
 
-int main() /// main func
-{   
-    fastread;   
+int main()
+{
+    fastread;
     ll tt = 1;
     cin >> tt;
     while(tt --> 0)
