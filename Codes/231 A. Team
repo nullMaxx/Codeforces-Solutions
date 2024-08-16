@@ -1,0 +1,29 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+	int n,t1,t2,t3,k=0;
+	
+	cin >> n;
+	
+	for(int i=0;i<n;i++)
+	{
+		int q=0;
+		
+		cin >> t1 >> t2 >> t3;
+		
+		if(t1==1)
+			q++;
+			
+		if(t2==1)
+			q++;
+			
+		if(t3==1)
+			q++;
+			
+		if(q>=2)
+			k++;
+	}
+	cout << k;
+}
